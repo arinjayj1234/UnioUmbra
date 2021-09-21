@@ -1,0 +1,63 @@
+<!DOCYTPE html>
+<html>
+    <head>
+        <title>Unio Umbra</title>
+    </head>
+    <body>
+        <section id="divv">
+            
+        <section id="divvs">
+            <h1>Unio Umbra, The Best Team</h1>
+            <hr width="1000px">
+            <h3>Don't Join Today!</h3>
+            <img src="https://c.neevacdn.net/image/fetch/s--FBFuemga--/https%3A//tse1.mm.bing.net/th%3Fid%3DOIP.W55u0Q7Ip0Sb-bIGXIlZbwHaEe%26pid%3DApi?savepath=th" id="img1">
+        </section>
+        <section id="divyy">
+            <h1>Team Pass</h1>
+            <input type="text" id="pAsss" placeholder="Key">
+            <br>
+            <br>
+            <button onclick="sUbmit();">Enter</button>
+            <br>
+            <br>
+            <input type="text" id="name" placeholder="Identity">
+        </section>
+            <br>
+            <br>
+        </section>
+    </body>
+    <script>
+        function sUbmit(){
+            key = document.getElementById("pAsss").value;
+            name = document.getElementById("name").value;
+            if (key == eclipse){
+                console.log("You got in!");
+                localStorage.setItem("Identity", name );
+            } else if (key == admin613 && name == Arinjay){
+                console.log("All hail the lord of shadows - Arinjay");
+                window.location("admin.html");
+            }
+        }
+    </script>
+    <style>
+        body {
+            text-align: center;
+            background: rgb(212,210,249);
+            background: linear-gradient(90deg, rgba(212,210,249,1) 0%, rgba(0,0,0,1) 50%, rgba(251,179,0,1) 100%);
+            color: white;
+        }
+        #img1 {
+            height: 100;
+        }
+        #divv {
+            background-color: black;
+            opacity: 50%;
+            height: 650px;
+            border-radius: 100px;
+            
+        }
+        button {
+            background-color: darkgoldenrod;
+        }
+    </style>
+</html>
