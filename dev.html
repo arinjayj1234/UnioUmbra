@@ -2,45 +2,72 @@
 <html>
     <head>
         <title>Unio Umbra</title>
-    </head>
-    <body>
-        <div id="divv">
-            
-        <section id="divvs">
-            <h1>Unio Umbra, The Best Team</h1>
-            <hr width="990px">
-            <h3>Don't Join Today!</h3>
-            <img src="https://c.neevacdn.net/image/fetch/s--FBFuemga--/https%3A//tse1.mm.bing.net/th%3Fid%3DOIP.W55u0Q7Ip0Sb-bIGXIlZbwHaEe%26pid%3DApi?savepath=th" id="img1">
-        </section>
-        <section id="divyy">
-            <h1>Team Pass</h1>
-            <input type="text" id="pAsss" placeholder="Key">
-            <br>
-            <br>
-            <button onclick="sUbmit();">Enter</button>
-            <br>
-            <br>
-            <input type="text" id="name" placeholder="Identity">
-        </section>
-            <br>
-            <br>
-        </div>
-    </body>
-    <script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+        <script>
         function sUbmit(){
             key = document.getElementById("pAsss").value;
             name = document.getElementById("name").value;
             if (key == "eclipse"){
                 console.log("You got in!");
                 localStorage.setItem("Identity", name );
-                window.location = "member.html";
             } else if (key == "admin613" && name == "Arinjay"){
                 console.log("All hail the lord of shadows - Arinjay");
                 window.location = "admin.html";s
             }
         }
     </script>
-    <style>
+    </head>
+    <body background="background.jpg">
+      <center class="content">
+        <br>
+        <div id="divv">
+            
+        <section id="divvs">
+            <h1 class="title">Unio Umbra, The Best Team</h1>
+            <hr width="990px">
+            <h3 class="subtitle is-6">Don't Join Today!</h3>
+        </section>
+        <section id="divyy">
+            <h1 class="title is-4">Team Pass</h1>
+            <input type="text" id="pAsss" placeholder="Key" class="input is-small is-link">
+            <br>
+            <br>
+            <button onclick="sUbmit();" class='button is-warning'>Enter</button>
+            <br>
+            <br>
+            <input type="text" id="name" placeholder="Identity" class="input is-small is-link">
+        </section>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <footer class="footer">
+          <div class="content has-text-centered stuff">
+            <p>
+            This website is property of the <strong>Unio Umbra</strong> Corparation.
+            </p>
+          </div>
+</footer>
+        </center>
+        <style>
+        .divvs{
+          color: #ffffff;
+        }
+        .footer{
+          background-color: gray;
+        }
+      </style>
+    </body>
+    <!-- <style>
         body {
             text-align: center;
             background: rgb(212,210,249);
@@ -51,18 +78,17 @@
             align-items: center;
         }
         #img1 {
-            height: 100px;
+            height: 100;
         }
         #divv {
             background-color: black;
             opacity: 50%;
             height: 650px;
             border-radius: 100px;
-            height 650px;
         }
         button {
             background-color: darkgoldenrod;
-            border-radius: 10px;
         }
-    </style>
+    </style> -->
+    
 </html>
