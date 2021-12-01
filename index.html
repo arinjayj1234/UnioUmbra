@@ -13,9 +13,12 @@
                 localStorage.setItem("Identity", name );
             } else if (key == "admin613" && name == "Arinjay"){
                 console.log("All hail the lord of shadows - Arinjay");
-                window.location = "admin.html";s
+                window.location = "admin.html";
             }
         }
+         function classic(){
+            window.location = "classic.html";
+         }
     </script>
     </head>
     <body background="background.jpg">
@@ -55,7 +58,7 @@
             <p>
             This website is property of the <strong>Unio Umbra</strong> Corporation.
             </p>
-              <button class="button is-link">Go To Legacy UI</button>
+              <button class="button is-link" onclick="classic();">Go To Legacy UI</button>
           </div>
 </footer>
         </center>
